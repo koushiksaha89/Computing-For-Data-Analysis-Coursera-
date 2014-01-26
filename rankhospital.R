@@ -1,6 +1,6 @@
 rankhospital<-function(state,outcome,num="best")
 {
-  data1<<-read.csv("outcome-of-care-measures.csv",colClasses="character")
+  data1<-read.csv("outcome-of-care-measures.csv",colClasses="character")
   if(!(state %in% data1$State))
   {
 	  stop("invalid state")
